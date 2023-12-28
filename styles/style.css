@@ -117,13 +117,24 @@ ol {
 
 .content__card-link {
   display: block;
-  margin: 1px;
+  margin: 2px;
   color: #fff;
   text-decoration: none;
 }
 
 .content__card-link:focus {
   outline: none;
+}
+
+.content__card-link:focus-visible {
+  border: 1px solid #fff;
+}
+.content__card-link:active {
+  background-color: #545050;
+}
+
+.content__card-link:hover {
+  text-decoration: underline;
 }
 
 .content__video-card-title {
@@ -157,4 +168,126 @@ ol {
   clip: rect(0 0 0 0);
   clip-path: inset(50%);
   white-space: nowrap;
+}
+
+fieldset {
+  border: none;
+}
+
+.search-form__label {
+  width: fit-content;
+  display: flex;
+  flex-flow: row nowrap;
+  cursor: pointer;
+}
+
+.search-form__label:has(:focus-visible) {
+  outline-offset: 2px;
+  outline: 1px solid #fff;
+}
+
+.search-form__checkbox-list {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+}
+
+.search-form__textfield {
+  appearance: none;
+  width: 225px;
+  margin: 1px;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  border: none;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  padding: 0;
+  font-style: normal;
+  line-height: normal;
+  background: transparent;
+}
+
+.search-form__pseudo-checkbox {
+  width: 19px;
+  height: 19px;
+  margin-right: 5px;
+  position: relative;
+  border: 1px solid #fff;
+}
+
+.search-form__pseudo-checkbox::before {
+  width: 15px;
+  height: 15px;
+  margin: 1px;
+  content: '';
+  display: none;
+  background-color: #fff;
+}
+
+.search-form__checkbox:checked ~ .search-form__pseudo-checkbox::before,
+.search-form__checkbox:active ~ .search-form__pseudo-checkbox::before {
+  display: block;
+}
+
+.search-form__checkbox:has(:focus-visible) {
+  outline-offset: 2px;
+  outline: 1px solid #fff;
+}
+
+.search-form__checkbox-list .search-form__label:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.search-form__checkbox-list .search-form__label:hover {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.button {
+  cursor: pointer;
+  border: 1px solid #fff;
+  padding: 6px 0;
+  font: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  font-style: normal;
+  color: #fff;
+  line-height: normal;
+  text-align: center;
+  background: transparent;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button:active {
+  background-color: #545050;
+}
+
+.button:hover {
+  text-decoration: underline;
+}
+
+.button:focus-visible {
+  outline-offset: 1px;
+  outline: 1px solid #fff;
+}
+
+.search-form__submit-button {
+  width: 194px;
+  align-self: flex-end;
+}
+
+.more-button {
+  width: 100%;
+}
+
+.content__card-link_current {
+  background-color: #545050;
 }
