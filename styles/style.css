@@ -75,7 +75,7 @@ ol {
   object-fit: cover;
 }
 
-.result__video-container{
+.result__video-container {
   position: relative;
   width: 711px;
   height: 386px;
@@ -102,7 +102,7 @@ ol {
   flex-grow: 1;
 }
 
-.search-form{
+.search-form {
   display: grid;
   grid-template-columns: 1fr 1.1fr 1fr; 
   grid-template-rows: 1fr;
@@ -202,7 +202,7 @@ fieldset {
   outline: 1px solid #fff;
 }
 
-.search-form__label:active{
+.search-form__label:active {
   outline: 1px solid #FFF;
   outline-offset:-1px; 
 }
